@@ -1,0 +1,49 @@
+site_name: Searchpe Core
+site_url: https://github.com/surenperu/searchpe-core
+site_description: 'Documentación de Searchpe Core, DNI - Reniec, RUC - Sunat'
+site_author: 'Alex Pariona'
+
+# Repository
+repo_name: 'surenperu/searchpe-core'
+repo_url: 'https://github.com/surenperu/searchpe-core'
+
+pages:
+    - Principal: index.md
+    - Dni: dni.md
+    - Ruc: ruc.md
+    - 'Usuario SOL': user-sol.md
+
+# Configuration
+theme:
+  name: 'material'
+  favicon: 'img/peru.png'
+  logo: 'img/peru.png'
+  language: 'es'
+  palette:
+    primary: 'Red'
+    accent: 'Indigo'
+
+extra_css:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/themes/prism-okaidia.min.css'
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/prism.min.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-php.min.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-json.min.js'
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/lxpary'
+  author:
+    github: surenperu
+  disqus: 'searchpe-core'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      css_class: code
+      use_pygments: false
+      guess_lang: false
+  - toc:
+      permalink: true
